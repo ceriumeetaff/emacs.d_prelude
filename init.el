@@ -1,5 +1,5 @@
 ;;; init.el --- Prelude's configuration entry point.
-;;
+;;  prelude_origin_config
 ;; Copyright (c) 2011-2016 Bozhidar Batsov
 ;;
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
