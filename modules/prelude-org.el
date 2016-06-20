@@ -88,7 +88,7 @@
       '("
 \\usepackage{ctex}
 \\usepackage{graphicx}
-\\usepackage[top=2.54cm, bottom=2.54cm, left=3.17cm, right=3.17cm]{geometry}
+\\usepackage[top=2.00cm, bottom=2.50cm, left=2.80cm, right=2.80cm]{geometry}
 "))
 (setq org-latex-compiler "XeLaTex")
 (setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
