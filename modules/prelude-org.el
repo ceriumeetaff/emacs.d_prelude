@@ -84,11 +84,12 @@
 ;; orgmode export to pdf,using xelatex
 ;; add to org header, add the ctex package, and set the page size
 ;; #+LATEX_HEADER: \usepackage{ctex}
+;; A4:top 2.54cm left 3.17cm
 (setq org-latex-packages-alist
       '("
 \\usepackage{ctex}
 \\usepackage{graphicx}
-\\usepackage[top=2.00cm, bottom=2.50cm, left=2.80cm, right=2.80cm]{geometry}
+\\usepackage[top=2.00cm, bottom=2.00cm, left=2.00cm, right=2.00cm]{geometry}
 "))
 (setq org-latex-compiler "XeLaTex")
 (setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
