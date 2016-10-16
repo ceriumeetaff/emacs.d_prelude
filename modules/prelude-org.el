@@ -130,7 +130,7 @@
 ;; -----------------------------------------------------------------------------
 ;; set plantuml path
 (setq org-plantuml-jar-path
-      (expand-file-name "/usr/local/Cellar/emacs/24.5/share/emacs/24.5/lisp/contrib/scripts/plantuml.jar"))
+      (expand-file-name "~/.emacs.d/scripts/plantuml.jar"))
 
 ;; -----------------------------------------------------------------------------
 ;; plantumlDemo
