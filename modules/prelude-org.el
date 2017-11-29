@@ -78,8 +78,14 @@
 	 "* %?\nEntered on %U\n  %i\n  %a")))
 ;; ----------------------------------------------------------------------------
 ;; load markdown expordown exporter automatically with org-mode
-(eval-after-load "org"
-  '(require 'ox-md nil t))
+;;(eval-after-load "org"
+;;  '(require 'ox-md nil t))
+;;  '(require 'ox-gfm nil t))
+
+(eval-after-load "org" '(require 'ox-md nil t))
+
+(eval-after-load "org" '(require 'ox-gfm nil t))
+
 ;; -----------------------------------------------------------------------------
 ;; orgmode export to pdf,using xelatex
 ;; add to org header, add the ctex package, and set the page size
