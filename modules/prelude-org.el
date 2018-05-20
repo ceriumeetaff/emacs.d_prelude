@@ -64,19 +64,30 @@
 (setq org-log-done 'note)
 ;; -----------------------------------------------------------------------------
 ;;set up capture
-(setq org-directory "~/gitfu/fuprivate/notes/")
-(setq org-default-notes-file (concat org-directory "fnote.org"))
+
+(setq org-directory "~/gitfu/funote/")
+(setq org-default-notes-file (concat org-directory "knowledgeBase.org"))
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/Dropbox/gtd/gtdfu.org" "Tasks")
-	 "* TODO %?\n  %i\n %a" :clock-in t :clock-resume t :prepend t)
-	("i" "Inbox" entry (file+headline (concat org-directory "inbox.org") "Inbox")
-	 "* %?\n %i\n %T\n %a")
-	("n" "Note" entry (file+headline (concat org-directory "fnote.org") "Note")
-	 "* %?\n %i\n %T\n %a")
-	("v" "Vocabulary" entry (file+headline (concat org-directory "vocabulary.org") "Vocabulary")
-         "* %^{The word} \n:PROPERTIES:\n:Part-of-speech: %^{Part of speech|verb|noun|adj|adv}\n \n %t\n %^{Extended word (may be empty)} \n** Answer \n%^{The definition}")
-        ("j" "Journal" entry (file+datetree (concat org-directory "journal.org"))
-	 "* %?\nEntered on %U\n  %i\n  %a")))
+      '(("t" "Todo" entry (file+headline (concat org-directory "gtd.org") "Tasks")  "* TODO %?\n %i\n %a" :clock-in t :clock-resume t :prepend t)
+        ("i" "Inbox" entry (file+headline (concat org-directory "inboxcapture.org") "Inbox") "* %?\n %i\n %T\n %a")
+        ("n" "Note" entry (file+headline (concat org-directory "knowledgeBase.org") "Note") "* %?\n %i\n %T\n %a")
+        ("d" "diary" entry (file+datetree (concat org-directory "diary.org") "Diary") "* %?\nEntered on %U\n  %i\n  %a")
+        ))
+
+;; older setting
+;; (setq org-directory "~/gitfu/fuprivate/notes/")
+;; (setq org-default-notes-file (concat org-directory "fnote.org"))
+;; (setq org-capture-templates
+;;      '(("t" "Todo" entry (file+headline "~/Dropbox/gtd/gtdfu.org" "Tasks")
+;;	 "* TODO %?\n  %i\n %a" :clock-in t :clock-resume t :prepend t)
+;;	("i" "Inbox" entry (file+headline (concat org-directory "inbox.org") "Inbox")
+;;	 "* %?\n %i\n %T\n %a")
+;;	("n" "Note" entry (file+headline (concat org-directory "fnote.org") "Note")
+;;	 "* %?\n %i\n %T\n %a")
+;;	("v" "Vocabulary" entry (file+headline (concat org-directory "vocabulary.org") "Vocabulary")
+;;         "* %^{The word} \n:PROPERTIES:\n:Part-of-speech: %^{Part of speech|verb|noun|adj|adv}\n \n %t\n %^{Extended word (may be empty)} \n** Answer \n%^{The definition}")
+;;        ("j" "Journal" entry (file+datetree (concat org-directory "journal.org"))
+;;	 "* %?\nEntered on %U\n  %i\n  %a")))
 ;; ----------------------------------------------------------------------------
 ;; load markdown expordown exporter automatically with org-mode
 ;;(eval-after-load "org"
