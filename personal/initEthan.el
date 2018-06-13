@@ -14,8 +14,9 @@
 (add-hook 'artist-mode-hook
           (lambda()
             (local-set-key (kbd "s-1") 'org-mode)
-            (local-set-key (kbd "s-2") 'artist-select-op-pen-line) ;;f2=pen mode
-            (local-set-key (kbd "s-3") 'artist-select-op-line) ;;f3=line
-            (local-set-key (kbd "s-4") 'artist-select-op-square) ;;f4=rectangle
-            (local-set-key (kbd "s-5") 'artist-select-op-ellipse)  ;;f5=ellipse
+            (local-set-key (kbd "s-2") 'artist-select-op-pen-line) ;;command-2=pen mode
+            (local-set-key (kbd "s-3") 'artist-select-op-line) ;;command-3=line
+            (local-set-key (kbd "s-4") 'artist-select-op-square) ;;command-4=rectangle
+            (local-set-key (kbd "s-5") 'artist-select-op-ellipse)  ;;command-5=ellipse
+            (local-set-key (kbd "s-6") 'artist-select-op-text-see-thru) ;;command-6=text
            ))

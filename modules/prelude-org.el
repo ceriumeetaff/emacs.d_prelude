@@ -114,13 +114,14 @@
                               "xelatex -interaction nonstopmode %f"))
 ;; -----------------------------------------------------------------------------
 ;; babel
+
 (org-babel-do-load-languages
  (quote org-babel-load-languages)
  (quote ((emacs-lisp . t)
          (java . t)
          (dot . t)
          (ditaa . t)
-         (R . t)
+;;         (R . t)
          (python . t)
          (ruby . t)
          (gnuplot . t)
@@ -132,6 +133,7 @@
          (latex . t)
 	 (C .t)
 	 )))
+
 ;; bebel evaluate don't ask questions
 (setq org-confirm-babel-evaluate nil)
 ;; -----------------------------------------------------------------------------
