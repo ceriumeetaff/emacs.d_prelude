@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ditaa
+# key: ditaa
+# --
+#+begin_src plantuml :file ./pic/$0.png :cmdline -charset UTF-8
+@startditaa
+
+@endditaa
+#+end_src

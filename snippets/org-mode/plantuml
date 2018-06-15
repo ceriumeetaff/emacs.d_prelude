@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: plantuml
+# key: plantuml
+# --
+
+#+begin_src plantuml :file ./pic/$0.png :cmdline -charset UTF-8
+
+#+end_src

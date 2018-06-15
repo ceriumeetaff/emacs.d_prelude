@@ -20,3 +20,14 @@
             (local-set-key (kbd "s-5") 'artist-select-op-ellipse)  ;;command-5=ellipse
             (local-set-key (kbd "s-6") 'artist-select-op-text-see-thru) ;;command-6=text
            ))
+
+
+;;yasnippets
+(add-to-list 'load-path
+             "~/.emacs.d/elpa/yasnippet-0.13.0")
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"))
