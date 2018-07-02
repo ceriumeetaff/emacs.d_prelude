@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: picture
+# key: pic
+# --
+
+#+ATTR_HTML: :WIDTH 100%
+[[$0]]
