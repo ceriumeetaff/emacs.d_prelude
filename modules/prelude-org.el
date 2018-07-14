@@ -68,10 +68,10 @@
 (setq org-directory "~/gitfu/funote/")
 (setq org-default-notes-file (concat org-directory "knowledgeBase.org"))
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline (concat org-directory "gtd.org") "Tasks")  "* TODO %?\n %i\n %a" :clock-in t :clock-resume t :prepend t)
-        ("i" "Inbox" entry (file+headline (concat org-directory "inboxcapture.org") "Inbox") "* %?\n %i\n %T\n %a")
-        ("n" "Note" entry (file+headline (concat org-directory "knowledgeBase.org") "Note") "* %?\n %i\n %T\n %a")
-        ("d" "diary" entry (file+datetree (concat org-directory "diary.org") "Diary") "* %?\nEntered on %U\n  %i\n  %a")
+      '(("t" "Todo" entry (file+headline (lambda() (concat org-directory "gtd.org")) "Tasks")  "* TODO %?\n %i\n %a" :clock-in t :clock-resume t :prepend t)
+        ("i" "Inbox" entry (file+headline (lambda() (concat org-directory "inboxcapture.org")) "Inbox") "* %?\n %i\n %T\n %a")
+        ("n" "Note" entry (file+headline (lambda() (concat org-directory "knowledgeBase.org")) "Note") "* %?\n %i\n %T\n %a")
+        ("d" "Diary" entry (file+datetree (lambda() (concat org-directory "diary.org")) "Diary") "* %?\nEntered on %U\n  %i\n  %a")
         ))
 
 ;; older setting
