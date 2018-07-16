@@ -71,7 +71,7 @@
       '(("t" "Todo" entry (file+headline (lambda() (concat org-directory "gtd.org")) "Tasks")  "* TODO %?\n %i\n %a" :clock-in t :clock-resume t :prepend t)
         ("i" "Inbox" entry (file+headline (lambda() (concat org-directory "inboxcapture.org")) "Inbox") "* %?\n %i\n %T\n %a")
         ("n" "Note" entry (file+headline (lambda() (concat org-directory "knowledgeBase.org")) "Note") "* %?\n %i\n %T\n %a")
-        ("d" "Diary" entry (file+datetree (lambda() (concat org-directory "diary.org")) "Diary") "* %?\nEntered on %U\n  %i\n  %a")
+        ("d" "Diary" entry (file+datetree (lambda() (concat org-directory "diary.org"))) "* %?\nEntered on %U\n  %i\n  %a")
         ))
 
 ;; older setting
