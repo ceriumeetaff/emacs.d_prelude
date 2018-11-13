@@ -65,7 +65,7 @@
 ;; -----------------------------------------------------------------------------
 ;;set up capture
 
-(setq org-directory "~/gitfu/funote/")
+(setq org-directory "~/Dropbox/org/")
 (setq org-default-notes-file (concat org-directory "knowledgeBase.org"))
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline (lambda() (concat org-directory "gtd.org")) "Tasks")  "* TODO %?\n %i\n %a" :clock-in t :clock-resume t :prepend t)
