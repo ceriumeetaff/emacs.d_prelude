@@ -31,3 +31,8 @@
 
 (setq yas-snippet-dirs
       '("~/.emacs.d/snippets"))
+
+;;htmlize
+(add-to-list 'load-path
+             "~/.emacs.d/modules/htmlize.el")
+(require 'htmlize)
