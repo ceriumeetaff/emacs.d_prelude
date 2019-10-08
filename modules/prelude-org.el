@@ -152,7 +152,6 @@
 (setq org-plantuml-jar-path
       (expand-file-name "~/.emacs.d/scripts/plantuml.jar"))
 
-
 ;; -----------------------------------------------------------------------------
 ;; plantumlDemo
 ;; #+begin_src plantuml :file tryout.png :cmdline -charset UTF-8
