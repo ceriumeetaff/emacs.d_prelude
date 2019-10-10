@@ -204,6 +204,10 @@ PACKAGE is installed only if not already present.  The file is opened in MODE."
 (when (package-installed-p 'pkgbuild-mode)
   (add-to-list 'auto-mode-alist '("PKGBUILD\\'" . pkgbuild-mode)))
 
+(when (package-installed-p 'plantuml-mode)
+  (add-to-list 'auto-mode-alist '("\\.plantuml\\'" . plantuml-mode)))
+
+
 ;; build auto-install mappings
 (mapc
  (lambda (entry)

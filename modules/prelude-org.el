@@ -33,6 +33,8 @@
 ;;; Code:
 
 (add-to-list 'auto-mode-alist '("\\.org\\’" . org-mode))
+;; integration with org-mode
+;; (add-to-list 'org-src-lang-modes '("plantuml" . plantuml))
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
